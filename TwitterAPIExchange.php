@@ -45,8 +45,8 @@ class TwitterAPIExchange
             throw new Exception('Make sure you are passing in the correct parameters');
         }
 
-        $this->oauth_access_token = $settings['9Rx35XKEDIWGYhiWIEOUx14m8'];
-        $this->oauth_access_token_secret = $settings['LPDG2JDUg9kVP9M2YV4mwKFqpl8K1XoXAYH2i1P1ymetPjJFmp'];
+        $this->oauth_access_token = $settings['oauth_access_token'];
+        $this->oauth_access_token_secret = $settings['oauth_access_token_secret'];
         $this->consumer_key = $settings['consumer_key'];
         $this->consumer_secret = $settings['consumer_secret'];
     }
