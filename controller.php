@@ -10,7 +10,8 @@ $keywords = explode(" ",$keyword);
 $query = implode($plus,$keywords);
 $q = str_replace('','%3A',$query);
 
-$url='http://search.twitter.com/search.json?&result_type=recent&rpp100&q=' . $q;
+$url='https://api.twitter.com/1.1/search/tweets.json' . $q;
+$requestMethod = 'POST';
 
 echo'<h3>'.$query.'</h3>';
 echo'<h3>URL for the Query</h3>';
