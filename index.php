@@ -5,7 +5,7 @@
    Purpose: Authenticates and prints out JSON results
    Version: 5.0
    Notes   : 
-   Author : Omotola
+   Author : Omotola and Shauns
  ================================================-->*/
 // requires library 
        require_once('TwitterAPIExchange.php');
@@ -40,7 +40,8 @@ $response = $twitter->setGetfield($getfield)
 //prints out the query string, and url
 echo'<h3>'.$query.'</h3>';
 echo'<h3>URL for the Query</h3>';
-echo'<a href='.$url.'>' .$url.'</a>';
+//echo'<a href='.$url.'>' .$url.'</a>';
+echo'<a href='.$url.'?q='.$query.'>' .$url.'?q='.$query.'</a>';
 echo'<hr>';
 
 
